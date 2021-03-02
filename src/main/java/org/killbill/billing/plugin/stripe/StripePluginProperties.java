@@ -79,7 +79,7 @@ public abstract class StripePluginProperties {
                 additionalDataMap.put("ach_debit_type", achDebit.getType());
             }
             additionalDataMap.put("created", stripeSource.getCreated());
-            additionalDataMap.put("customer_id", stripeSource.getCustomer());
+            additionalDataMap.put("customer", stripeSource.getCustomer());
             additionalDataMap.put("id", stripeSource.getId());
             additionalDataMap.put("livemode", stripeSource.getLivemode());
             additionalDataMap.put("metadata", stripeSource.getMetadata());
@@ -95,7 +95,7 @@ public abstract class StripePluginProperties {
             additionalDataMap.put("last4", stripeBankAccount.getLast4());
             additionalDataMap.put("routing_number", stripeBankAccount.getRoutingNumber());
             additionalDataMap.put("status", stripeBankAccount.getStatus());
-            additionalDataMap.put("customer_id", stripeBankAccount.getCustomer());
+            additionalDataMap.put("customer", stripeBankAccount.getCustomer());
             additionalDataMap.put("id", stripeBankAccount.getId());
             additionalDataMap.put("metadata", stripeBankAccount.getMetadata());
             additionalDataMap.put("object", stripeBankAccount.getObject());
@@ -144,7 +144,7 @@ public abstract class StripePluginProperties {
             }
         }
         additionalDataMap.put("created", stripePaymentMethod.getCreated());
-        additionalDataMap.put("customer_id", stripePaymentMethod.getCustomer());
+        additionalDataMap.put("customer", stripePaymentMethod.getCustomer());
         additionalDataMap.put("id", stripePaymentMethod.getId());
         additionalDataMap.put("livemode", stripePaymentMethod.getLivemode());
         additionalDataMap.put("metadata", stripePaymentMethod.getMetadata());
@@ -198,7 +198,7 @@ public abstract class StripePluginProperties {
         additionalDataMap.put("confirmation_method", stripePaymentIntent.getConfirmationMethod());
         additionalDataMap.put("created", stripePaymentIntent.getCreated());
         additionalDataMap.put("currency", stripePaymentIntent.getCurrency());
-        additionalDataMap.put("customer_id", stripePaymentIntent.getCustomer());
+        additionalDataMap.put("customer", stripePaymentIntent.getCustomer());
         additionalDataMap.put("description", stripePaymentIntent.getDescription());
         additionalDataMap.put("id", stripePaymentIntent.getId());
         additionalDataMap.put("invoice_id", stripePaymentIntent.getInvoice());
@@ -224,7 +224,7 @@ public abstract class StripePluginProperties {
         additionalDataMap.put("billing_address_collection", session.getBillingAddressCollection());
         additionalDataMap.put("cancel_url", session.getCancelUrl());
         additionalDataMap.put("client_reference_id", session.getClientReferenceId());
-        additionalDataMap.put("customer_id", session.getCustomer());
+        additionalDataMap.put("customer", session.getCustomer());
         additionalDataMap.put("line_items", session.getLineItems());
         additionalDataMap.put("id", session.getId());
         additionalDataMap.put("livemode", session.getLivemode());
